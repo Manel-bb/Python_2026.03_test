@@ -117,14 +117,14 @@ while jogadas != rodadas:
 print(' Eu ganhei {} rodada(s), você ganhou {} rodada(s) e empatamos {} vezes.'.format(computador,hmn,empates))
 sleep(1.5)
 if computador > hmn:
-    print(' Eu te derrotei! Sou superior.')
-elif computador < hmn:
-    print(' Você venceu...', end='')
+    print(' \033[1;31mEu te derrotei\033[m! Sou superior.')
+elif computador < hmn: 
+    print(' \033[1;32mVocê me derrotou\033[m... ', end='')
     print('humano.')
 else:
-    print(' Empate!')
+    print(' \033[1;36mEmpatamos!\033[m')
 sleep(0.3)
-print('\n \033[1;31mFim de jogo.\033[m')
+print('\n Fim de jogo.')
 print(' ')
 sleep(0.8)
 print(bs)
