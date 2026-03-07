@@ -108,7 +108,7 @@ while jogadas != rodadas:
             print('\n \033[36mEmpate!\n Vida longa e próspera!\033[m')
             empates = empates + 1
     else:
-        print("\n \033[31;1m'{}' é invalido. Escolha entre: Pedra, papel, tesoura, lagarto ou Spock.\033[m".format(actx))
+        print("\n \033[31;1m'{}' é invalido. Escolha entre: Pedra, papel, tesoura, lagarto ou Spock.\033[m".format(actx.title()))
         jogadas = jogadas - 1
     print('')
     sleep(2.0)
