@@ -109,6 +109,7 @@ while jogadas != rodadas:
             empates = empates + 1
     else:
         print("\n \033[31;1m'{}' é invalido. Escolha entre: Pedra, papel, tesoura, lagarto ou Spock.\033[m".format(actx))
+        jogadas = jogadas - 1
     print('')
     sleep(2.0)
     print(bs)
